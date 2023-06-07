@@ -51,6 +51,6 @@ website:
         aria-label: github website creation template
       - icon: twitter
         href: https://twitter.com/
-        aria-label: FIXME Insert link to twitter page here
+        aria-label: <FIXME Insert link to twitter page here>
   sidebar:
     - title: "Home"

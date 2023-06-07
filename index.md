@@ -61,7 +61,7 @@ Below is a sample author list
 
 You can cite these materials as:
 
-Asare P and van Tonder A. (2023) "github_quarto_website_template", *INSERT URL HERE*
+Asare P and van Tonder A. (2023) "github website template built on quarto", https://princeasaregh.github.io/github_website_creation_template/
 
 Or in BibTeX format:
 
