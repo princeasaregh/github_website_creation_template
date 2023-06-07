@@ -10,6 +10,7 @@ date: today
 
 Note that the pages are rendered/built based on [quarto](https://quarto.org/).
 You may find this [site](https://github.com/cambiotraining/quarto-course-template) also useful.
+
 ## Overview 
 
 This is the landing page for this website.
