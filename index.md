@@ -1,5 +1,5 @@
 ---
-title: "github_website_creation_template"
+title: "github website template built on quarto"
 author: "Prince Asare, Andries van Tonder"
 date: today
 ---
@@ -8,6 +8,8 @@ date: today
 
 # Template for hosting your content on github pages
 
+Note that the pages are rendered/built based on [quarto](https://quarto.org/).
+You may find this [site](https://github.com/cambiotraining/quarto-course-template) also useful.
 ## Overview 
 
 This is the landing page for this website.
@@ -63,15 +65,13 @@ Asare P and van Tonder A. (2023) "github_quarto_website_template", *INSERT URL H
 
 Or in BibTeX format:
 
-<!--FIXME:  Update the information below-->
-
 ```
 @Misc{,
   author = {Asare, Prince and van Tonder, Andries},
-  title = {avantonder.github.io/Ghana_course/: Introduction to bacterial genomics},
+  title = {princeasaregh.github.io/github_website_creation_template: github website template built on quarto},
   month = {May},
   year = {2023},
-  url = {https://avantonder.github.io/Ghana_course/},
+  url = {https://princeasaregh.github.io/github_website_creation_template/},
 }
 ```
 
