@@ -7,6 +7,7 @@ title: "Setup"
 - Navigate to where you want to setup the course repository.
 
 - Create a new empty directory for the course. eg. `name_of_repo_directory`. 
+
 **NB.** *In the below code and through out the instructions, replace `name_of_repo_directory` with the actual name of the directory you wish to create.*
 
 ```bash
@@ -30,7 +31,7 @@ git init
 git clone https://github.com/princeasaregh/github_website_creation_template.git
 ```
 
-- move all the contents (*including hidden files*)from the cloned repository into the current repository `name_of_repo_directory` and clear the repository.
+- move all the contents (*including hidden files*) from the cloned repository into the current repository `name_of_repo_directory` and clear the repository.
 ```bash
 mv github_website_creation_template/* .
 mv github_website_creation_template/.* .
@@ -38,6 +39,7 @@ rm github_website_creation_template
 ```
 
 - Tidy the files for the new repository.
+
 -- You should remove materials that may not apply to your course.
 
 ```bash
