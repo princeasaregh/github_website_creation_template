@@ -40,10 +40,10 @@ rm github_website_creation_template
 
 - Tidy the files for the new repository.
 
--- You should remove materials that may not apply to your course.
+- - You should remove materials that may not apply to your course.
 
 ```bash
-rm `specify files to reove`
+rm `specify files to remove`
 ```
 
 - rename the two files with surfix `.code-workspace`and `.Rproj`to the appropriate names.
