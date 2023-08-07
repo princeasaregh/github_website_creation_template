@@ -2,15 +2,77 @@
 title: "Setup"
 ---
 
-## Setup instructions
+## Instructions for setting up a new repository
 
-Starting a New Course Repository
-    Create a new empty directory for the course.
-    cd into that directory and run: 
-quarto use template --no-prompt princeasaregh/github_website_creation_template
-Tidy the files for the new course (you can copy/paste this whole code block - unless you're on Mac, then you may need to use curl instead of wget): 
-# clean materials directory or files that you may not need
-rm materials/<insert_name_of_item+to+remove>
+- Navigate to where you want to setup the course repository.
+
+- Create a new empty directory for the course. eg. `name_of_repo_directory`. 
+**NB.** *In the below code and through out the instructions, replace `name_of_repo_directory` with the actual name of the directory you wish to create.*
+
+```bash
+mkdir name_of_repo_directory
+```
+
+- `cd` into the newly created directory 
+```bash
+cd name_of_repo_directory
+```
+
+- initiate `git`
+```bash
+git init
+```
+
+**NB.** *You need to have pre installed git to use the git command.*
+
+- clone this github_website_creation_template into the current directory
+```bash
+git clone https://github.com/princeasaregh/github_website_creation_template.git
+```
+
+- move all the contents (*including hidden files*)from the cloned repository into the current repository `name_of_repo_directory` and clear the repository.
+```bash
+mv github_website_creation_template/* .
+mv github_website_creation_template/.* .
+rm github_website_creation_template
+```
+
+- Tidy the files for the new repository.
+-- You should remove materials that may not apply to your course.
+
+```bash
+rm `specify files to reove`
+```
+
+- rename the two files with surfix `.code-workspace`and `.Rproj`to the appropriate names.
+```bash
+mv github_website_creation_template.code-workspace `name_of_repo_directory`.code-workspace
+mv github_website_creation_template.Rproj name_of_repo_directory.Rproj
+```
+
+- now add, commit and push the content to `github`.
+```bash
+git add .
+git commit -m "myfirstcommit"
+```
+
+- Add the project to your git repositories using any method of your choice.
+-- make sure to change the repository visibility to public.
+-- for the github pages to be rendered, allow read and write permissions to the workflows. Do this by going to the repository `settings`, then to `Actions`, (on the left menu) and then to `general`. Now you can set the permissions to read and write.
+ 
+![Workflow permissions](materials/fig/workflow_permissions.png)
+
+- If you do not see the pages rendered automatically, you can rerun the failed jobs in git repository to apply the new settings. Alternatively, make an update to any of the local files and push them to the git repository. 
+
+- Next, you should navigate to `Pages` under `settings` and select `gh-branches` under `Build and deployment`. Then click `save`.
+
+![github pages](materials/fig/github_pages.png)
+
+Refresh the page after a couple of minutes. Your website should be deployed and made live at a specified URL at the top of the page.
+
+
+
+
 # rename VS Code and Rproj files
 mv github_website_creation_template.code-workspace <name_of_new_directory>.code-workspace
 mv github_website_creation_template.Rproj <name_of_new_directory>.Rproj
@@ -31,29 +93,10 @@ sed 's/_extensions/_extensions\/cambiotraining/g' _quarto.yml > _temp.yml
 rm _quarto.yml; mv _temp.yml _quarto.yml
 
 
-mkdir <name_of_new_directory>
-cd <name_of_new_directory>
-git init
-git clone https://github.com/princeasaregh/github_website_creation_template.git
-mv github_website_creation_template/* .
-mv github_website_creation_template/.* .
-rm github_website_creation_template
-mv github_website_creation_template.code-workspace <name_of_new_directory>.code-workspace
-mv github_website_creation_template.Rproj <name_of_new_directory>.Rproj
-git add .
-git commit -m "birthdate"
-Add the project to your git repositories using any method of your choice.
-Make sure to change the repository visibility to public and for the git-hub pages to be rendered, allow read and write permissions to the workflows.
-If you go to the repository settings, then to "Actions" (on the left menu) and then tp general, you can set permissions to ?
- 
-![Workflow permissions](materials/fig/workflow_permissions.png)
 
-If you do not see  the pages rendered automatically, you can rerun the failed jobs in git repository to make apply the new settings. Alternatively, make an update to any of the local files and push them to the git repository. 
-Once this is done, you should navigate to Pages under settings and select gh-branches under Build and deployment. Then click save.
 
-![github pages](materials/fig/github_pages.png)
 
-Refresh the page after a coiple of minutes. Your website should be deployed and made live at a specified URL at the top of the page.
+
 
 This repository contains course documents for carrying out sequencing analysis from ONT data
 
