@@ -19,19 +19,19 @@ mkdir name_of_repo_directory
 cd name_of_repo_directory
 ```
 
-- initiate `git`
+- Initiate `git`
 ```bash
 git init
 ```
 
 **NB.** *You need to have pre installed git to use the git command.*
 
-- clone this github_website_creation_template into the current directory
+- Clone this github_website_creation_template into the current directory
 ```bash
 git clone https://github.com/princeasaregh/github_website_creation_template.git
 ```
 
-- move all the contents (*including hidden files*) from the cloned repository into the current repository `name_of_repo_directory` and clear the repository.
+- Move all the contents (*including hidden files*) from the cloned repository into the current repository `name_of_repo_directory` and clear the repository.
 ```bash
 mv github_website_creation_template/* .
 mv github_website_creation_template/.* .
@@ -40,31 +40,33 @@ rm github_website_creation_template
 
 - Tidy the files for the new repository.
 
- - You should remove materials that may not apply to your course.
+  - You should remove materials that may not apply to your course.
 
 ```bash
 rm `specify files to remove`
 ```
 
-- rename the two files with surfix `.code-workspace`and `.Rproj`to the appropriate names.
+- Rename the two files with surfix `.code-workspace`and `.Rproj`to the appropriate names.
 ```bash
 mv github_website_creation_template.code-workspace `name_of_repo_directory`.code-workspace
 mv github_website_creation_template.Rproj name_of_repo_directory.Rproj
 ```
 
-- now add, commit and push the content to `github`.
+- Now add, commit and push the content to `github`.
 ```bash
 git add .
 git commit -m "myfirstcommit"
 ```
 
 - Add the project to your git repositories using any method of your choice.
--- make sure to change the repository visibility to public.
--- for the github pages to be rendered, allow read and write permissions to the workflows. Do this by going to the repository `settings`, then to `Actions`, (on the left menu) and then to `general`. Now you can set the permissions to read and write.
+
+  - make sure to change the repository visibility to public.
+
+  - for the github pages to be rendered, allow `read and write permissions` to the workflows. Do this by going to the repository `settings`, then to `Actions`, (on the left menu) and then to `general`. Now you can set the permissions to read and write.
  
 ![Workflow permissions](materials/fig/workflow_permissions.png)
 
-- If you do not see the pages rendered automatically, you can rerun the failed jobs in git repository to apply the new settings. Alternatively, make an update to any of the local files and push them to the git repository. 
+- If you do not see the pages rendered automatically, you can rerun the failed jobs in the git repository to apply the new settings. Alternatively, make an update to any of the local files and push them to the git repository. 
 
 - Next, you should navigate to `Pages` under `settings` and select `gh-branches` under `Build and deployment`. Then click `save`.
 
