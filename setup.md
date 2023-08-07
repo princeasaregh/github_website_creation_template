@@ -2,7 +2,7 @@
 title: "Setup"
 ---
 
-## Setting instructions
+## Setup instructions
 
 Starting a New Course Repository
     Create a new empty directory for the course.
@@ -49,6 +49,7 @@ If you go to the repository settings, then to "Actions" (on the left menu) and t
 
 ![Workflow permissions](../fig/workflow_permissions.png)
 
+![Workflow permissions](./materials/fig/workflow_permissions.png)
 
 If you do not see  the pages rendered automatically, you can rerun the failed jobs in git repository to make apply the new settings. Alternatively, make an update to any of the local files and push them to the git repository. 
 Once this is done, you should navigate to Pages under settings and select gh-branches under Build and deployment. Then click save.
