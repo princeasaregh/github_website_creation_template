@@ -46,6 +46,14 @@ rm github_website_creation_template
 rm `specify files to remove`
 ```
 
+- Edit the `README` file to suit your space.
+
+- Edit the course title in `index.md`.
+
+- Edit the course title and github link in `_quarto.yml`.
+
+- Some minimal files exists in `materials/`  directory. Edit the materials/_chapters.yml file to include a link to any new materials/... you create.
+
 - Rename the two files with surfix `.code-workspace`and `.Rproj`to the appropriate names.
 ```bash
 mv github_website_creation_template.code-workspace `name_of_repo_directory`.code-workspace
@@ -68,57 +76,15 @@ git commit -m "myfirstcommit"
 
 - If you do not see the pages rendered automatically, you can rerun the failed jobs in the git repository to apply the new settings. Alternatively, make an update to any of the local files and push them to the git repository. 
 
-- Next, you should navigate to `Pages` under `settings` and select `gh-branches` under `Build and deployment`. Then click `save`.
+- Next, you should navigate to `Pages` under `settings` and select `gh-pages` under `Build and deployment`. Then click `save`.
 
 ![github pages](materials/fig/github_pages.png)
 
-Refresh the page after a couple of minutes. Your website should be deployed and made live at a specified URL at the top of the page.
+- Refresh the page after a couple of minutes. Your website should be deployed and made live at a specified URL at the top of the page.
 
 
 
-
-# rename VS Code and Rproj files
-mv github_website_creation_template.code-workspace <name_of_new_directory>.code-workspace
-mv github_website_creation_template.Rproj <name_of_new_directory>.Rproj
-
-Edit the README file to suit your space
-Edit the course title in index.md.
-Edit the course title and github link in _quarto.yml.
-Some minimal files exists in materials/  directory. Edit the materials/_chapters.yml file to include a link to any new materials/... you create
-
-Create a new repository on GitHub, and then add/push your files as you would normally do for a new repository.
-After the first push, the site will be rendered to the gh-pages branch automatically. This may take a while (you can check the "Actions" tab of the repository to monitor its progress). Once the gh-pages branch has been created, go to the repository's "Settings > Pages" and select the gh-pages branch to render your pages.
-
-
-
-
-# fix path to logos
-sed 's/_extensions/_extensions\/cambiotraining/g' _quarto.yml > _temp.yml
-rm _quarto.yml; mv _temp.yml _quarto.yml
-
-
-
-
-
-
-
-This repository contains course documents for carrying out sequencing analysis from ONT data
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## The setup instructions below were used for a workshop course in analysing bacterial genomes. You are free to use these or modify to fit your needs as appropriate.
+## The `Conda` setup instructions below were used for a workshop course in analysing bacterial genomes. You are free to use these or modify to fit your needs as appropriate.
 
 <!-- 
 Note for Training Developers:
