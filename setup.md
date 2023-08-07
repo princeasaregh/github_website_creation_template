@@ -46,15 +46,12 @@ Add the project to your git repositories using any method of your choice.
 Make sure to change the repository visibility to public and for the git-hub pages to be rendered, allow read and write permissions to the workflows.
 If you go to the repository settings, then to "Actions" (on the left menu) and then tp general, you can set permissions to ?
  
-
-![Workflow permissions](../fig/workflow_permissions.png)
-
-![Workflow permissions](./materials/fig/workflow_permissions.png)
+![Workflow permissions](materials/fig/workflow_permissions.png)
 
 If you do not see  the pages rendered automatically, you can rerun the failed jobs in git repository to make apply the new settings. Alternatively, make an update to any of the local files and push them to the git repository. 
 Once this is done, you should navigate to Pages under settings and select gh-branches under Build and deployment. Then click save.
- 
-![FastQC quality report](../fig/github_pages.png)
+
+![github pages](materials/fig/github_pages.png)
 
 Refresh the page after a coiple of minutes. Your website should be deployed and made live at a specified URL at the top of the page.
 
